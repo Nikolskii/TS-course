@@ -1,0 +1,24 @@
+{
+  "name": "ts-course",
+  "version": "1.0.0",
+  "description": "Образовательный курс",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikolskii/TS-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikolskii/TS-course/issues"
+  },
+  "homepage": "https://github.com/Nikolskii/TS-course#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
