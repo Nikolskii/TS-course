@@ -14,7 +14,7 @@ interface User {
 
 // window.isAuth;
 
-interface Person {
+export interface Person {
   readonly firstName: string;
   lastName: string;
   phone?: string;
