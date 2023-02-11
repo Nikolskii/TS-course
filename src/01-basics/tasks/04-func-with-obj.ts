@@ -43,7 +43,7 @@ const admin1: Admin = {
 
 // Проверьте, что поля не пустые и выведите приветственное сообщение в консоль.
 
-const login = (user: { login: string; password: string }): void => {
+export const login = (user: { login: string; password: string }): void => {
   if (user.login.length > 0 && user.password.length > 0) {
     console.log('Hello', user.login);
   }

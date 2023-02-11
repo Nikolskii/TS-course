@@ -4,7 +4,7 @@
 
 type Level = 'junior' | 'middle' | 'senior';
 
-interface Developer {
+export interface Developer {
   login: string;
   skills: string[];
   level: Level;
