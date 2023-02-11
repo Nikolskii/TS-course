@@ -11,8 +11,14 @@ interface Developer {
 }
 
 // create a function that change level of incoming developer
-function gradeDeveloper(user: { level: Level }, newLevel: Level) {
-  user.level = newLevel;
+function gradeDeveloper(user: { level: Level } /* newLevel: Level */) {
+  // user.level = newLevel;
+
+  if (user.level === 'junior') {
+    user.level = 'middle';
+  } else if (user.level === 'middle') {
+    user.level = 'senior';
+  }
 }
 
 const dev1: Developer = {
@@ -21,4 +27,5 @@ const dev1: Developer = {
   level: 'junior',
 };
 
-gradeDeveloper(dev1, 'middle');
+// gradeDeveloper(dev1, 'middle');
+gradeDeveloper(dev1);
