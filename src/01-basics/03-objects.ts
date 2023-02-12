@@ -1,4 +1,4 @@
-interface Car {
+export interface Car {
   wheels: number;
   brand: string;
   type: string;
