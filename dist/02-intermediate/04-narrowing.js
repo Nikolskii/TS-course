@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function example1(x) {
     if (typeof x === 'string') {
         x.toLowerCase();
