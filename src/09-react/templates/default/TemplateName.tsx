@@ -1,9 +1,7 @@
 import styles from './TemplateName.module.scss';
 
-interface TemplateNameProps { }
+interface TemplateNameProps {}
 
-export const TemplateName = ({ }: TemplateNameProps) => (
-  <div className={styles.TemplateName} data-testid="TemplateName">
-    TemplateName Component
-  </div>
+export const TemplateName = ({}: TemplateNameProps) => (
+  <div className={styles.templateName}>TemplateName Component</div>
 );
