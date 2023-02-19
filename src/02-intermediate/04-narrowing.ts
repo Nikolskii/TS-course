@@ -28,7 +28,7 @@ function example3(x: number[] | Date) {
   }
 }
 
-type Fish = { swim: () => void };
+export type Fish = { swim: () => void };
 type Bird = { fly: () => void };
 
 function move(animal: Fish | Bird) {

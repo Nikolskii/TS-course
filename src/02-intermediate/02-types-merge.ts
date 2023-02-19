@@ -13,7 +13,7 @@ type Union5 = { a: string; b: string; c: number } & {
 
 // }
 
-type User = {
+export type User = {
   readonly email: string;
   readonly login: string;
   password: string;
