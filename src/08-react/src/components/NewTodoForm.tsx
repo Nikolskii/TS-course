@@ -15,18 +15,13 @@ const NewTodoForm = ({ handleClick }: NewTodoFormProps) => {
   const onClick = () => {
     if (inputRef.current) {
       handleClick(inputRef.current.value);
+      inputRef.current.value = '';
     }
   };
 
   return (
     <>
-      <input
-        type="text"
-        placeholder="new todo"
-        // value={value}
-        // onChange={onChange}
-        ref={inputRef}
-      />
+      <input type="text" placeholder="new todo" ref={inputRef} />
       <button onClick={onClick}>Add todo</button>
     </>
   );
