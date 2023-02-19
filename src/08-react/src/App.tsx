@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import NewTodoForm from './components/NewTodoForm';
 import TodoItem from './components/TodoItem';
@@ -21,6 +21,14 @@ function App() {
     setTodos([newTodo, ...todos]);
     setText('');
   };
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/todos')
+      .then((res) => res.json())
+      .then((data: Todo[]) => {
+        setTodos(data);
+      });
+  }, []);
 
   return (
     <div className="App">
