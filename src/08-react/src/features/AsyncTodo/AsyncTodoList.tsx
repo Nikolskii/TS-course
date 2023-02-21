@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useAppDispatch, useAppSelector } from 'redux-hook';
 import { Todo } from 'types';
 import { selectAsyncTodos } from './asyncTodoSelectors';
-import { fetchAllTodos } from './todoAsyncActions';
+import { fetchAllTodos, removeTodo, toggleTodo } from './todoAsyncActions';
 
 const AsyncTodoList = () => {
   // const list = useAppSelector((state) => state.todos);
@@ -12,11 +12,11 @@ const AsyncTodoList = () => {
   const dispatch = useAppDispatch();
 
   const handleRemoveTodo = (id: Todo['id']) => {
-    // dispatch(removeTodo(id));
+    dispatch(removeTodo(id));
   };
 
   const handleToggleTodo = (id: Todo['id']) => {
-    // dispatch(toggleTodo(id));
+    dispatch(toggleTodo(id));
   };
 
   useEffect(() => {
