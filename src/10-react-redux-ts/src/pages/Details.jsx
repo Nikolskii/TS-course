@@ -20,7 +20,7 @@ const Details = () => {
       <Button onClick={() => navigate(-1)}>
         <IoArrowBack /> Back
       </Button>
-      {country && <Info {...country} />}
+      {country && <Info navigate={navigate} {...country} />}
     </div>
   );
 };
