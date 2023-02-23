@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CustomSelect } from './CustomSelect';
 import Search from './Search';
 
@@ -23,9 +23,15 @@ const Wrapper = styled.div`
   }
 `;
 
-const Controls = () => {
+const Controls = ({ onSearch }) => {
   const [search, setSearch] = useState('');
   const [region, setRegion] = useState('');
+
+  useEffect(() => {
+    const regionValue = region?.value || '';
+
+    onSearch(search, regionValue);
+  }, [search, region]);
 
   return (
     <Wrapper>
