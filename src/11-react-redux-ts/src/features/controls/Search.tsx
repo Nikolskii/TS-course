@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { IoSearch } from 'react-icons/io5';
 import { useSearch } from './use-search';
 
@@ -37,7 +36,7 @@ export const Search = () => {
   return (
     <InputContainer>
       <IoSearch />
-      <Input onChange={handleSearch} value={search}/>
+      <Input onChange={handleSearch} value={search} />
     </InputContainer>
   );
 };

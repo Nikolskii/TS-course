@@ -1,8 +1,20 @@
 import styled from 'styled-components';
 
-import Select from 'react-select';
+import Select, { Props } from 'react-select';
+import { Region } from 'types';
 
-export const CustomSelect = styled(Select).attrs({
+export type CountryOption =
+  | {
+      label: Region;
+      value: Region;
+    }
+  | '';
+
+function MySelect(props: Props<CountryOption, false>) {
+  return <Select {...props} />;
+}
+
+export const CustomSelect = styled(MySelect).attrs({
   styles: {
     control: (provided) => ({
       ...provided,
