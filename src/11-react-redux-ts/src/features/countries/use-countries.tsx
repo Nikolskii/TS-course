@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { selectControls } from '../controls/controls-slice';
+import { selectControls } from 'features/controls/controls-selectors';
 import { loadCountries } from './countries-slice';
 import {
   selectCountriesInfo,

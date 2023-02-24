@@ -16,7 +16,7 @@ function MySelect(props: Props<CountryOption, false>) {
 
 export const CustomSelect = styled(MySelect).attrs({
   styles: {
-    control: (provided) => ({
+    control: (provided: any) => ({
       ...provided,
       backgroundColor: 'var(--colors-ui-base)',
       color: 'var(--colors-text)',
@@ -26,7 +26,7 @@ export const CustomSelect = styled(MySelect).attrs({
       boxShadow: 'var(--shadow)',
       height: '50px',
     }),
-    option: (provided, state) => ({
+    option: (provided: any, state: any) => ({
       ...provided,
       cursor: 'pointer',
       color: 'var(--colors-text)',

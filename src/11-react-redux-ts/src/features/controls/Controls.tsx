@@ -1,14 +1,12 @@
 import styled from 'styled-components';
+
 import { Search } from './Search';
 import { CustomSelect } from './CustomSelect';
 import { useRegion } from './use-region';
 import { Region } from 'types';
 
 type RegionOption = {
-  [RegKey in Region]: {
-    value: RegKey;
-    label: RegKey;
-  };
+  [RegKey in Region]: { value: RegKey; label: RegKey };
 };
 
 const optionsMap: RegionOption = {
