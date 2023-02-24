@@ -9,7 +9,11 @@ const Wrapper = styled.main`
   }
 `;
 
-export const Main = ({ children }) => {
+interface MainProps {
+  children: React.ReactNode;
+}
+
+export const Main = ({ children }: MainProps) => {
   return (
     <Wrapper>
       <Container>{children}</Container>
