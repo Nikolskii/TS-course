@@ -1,4 +1,6 @@
+import { NavigateFunction } from 'react-router-dom';
 import styled from 'styled-components';
+import { Country } from 'types';
 import { useNeighbors } from './use-neighbors';
 
 const Wrapper = styled.section`
@@ -87,7 +89,11 @@ const Tag = styled.span`
   cursor: pointer;
 `;
 
-export const Info = (props) => {
+interface InfoProps extends Country {
+  push: NavigateFunction;
+}
+
+export const Info = (props: InfoProps) => {
   const {
     name,
     nativeName,
@@ -157,7 +163,10 @@ export const Info = (props) => {
           ) : (
             <TagGroup>
               {neighbors.map((countryName) => (
-                <Tag key={countryName} onClick={() => push(`/country/${countryName}`)}>
+                <Tag
+                  key={countryName}
+                  onClick={() => push(`/country/${countryName}`)}
+                >
                   {countryName}
                 </Tag>
               ))}
