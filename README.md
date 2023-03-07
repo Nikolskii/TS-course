@@ -6,7 +6,7 @@
 
 ## Практические работы
 [Devfinder](https://dev-finder.denisqa.ru/) - поиск аккаунтов GitHub.  
-[Country Flags](https://countries.denisqa.ru/country/Albania) - поиск и сортировка стран, просмотр страницы деталей.  
+[Country Flags](https://countries.denisqa.ru/) - поиск и сортировка стран, просмотр страницы деталей.  
 
 ## Содеражние курса
 
