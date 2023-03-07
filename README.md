@@ -5,6 +5,8 @@
 [Курс на Stepik.org](https://stepik.org/course/121859/info)
 
 ## Практические работы
+[Devfinder](https://dev-finder.denisqa.ru/) - поиск аккаунтов GitHub.  
+[Country Flags](https://countries.denisqa.ru/country/Albania) - поиск и сортировка стран, просмотр страницы деталей.  
 
 ## Содеражние курса
 
@@ -19,7 +21,7 @@
 - Типизация React и Redux приложений
 - 3 проекта на TypeScript
 
-### Стадия прохождения
+### Процесс прохождения
 
 - [x] Базовая типизация
 - [x] Продвинутая типизация
